@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +15,9 @@
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
-    <title>Phineas-Register</title>    
+<title>Phineas-Register</title>
 <body>
-  
+
 	<!-- Header of my Website -->
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-fixed-top topnav"
@@ -49,19 +49,23 @@
 	</nav>
 
 
-<br><br><br><br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 
-<form action="home.jsp" method ="post">
-<img src="Car6.jpg">
-<div class ="container">
-<div class="row">
-<div class="col-sm-8">
+	<form action="home.jsp" method="post">
+		<!-- img src="Car6.jpg"-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
 
-<div class="col-sm-4">
-<div class= "register">
-<div class="container">
-  <h2>Sign Up </h2>
-  <label for "Name">User Name </label>
+					<div class="col-sm-4">
+						<div class="register">
+							<div class="container">
+								<h2>Sign Up</h2>
+								<labelfor "Name">User Name </label>
 	<input type = "text" class="userId" name = "userId" placeholder=" User name "><br><br>
 	<label for "Pass">Password</label>
 	<input type = "password" class="password" name = "password" placeholder=" password "><br><br>
@@ -85,39 +89,40 @@
 <button type="submit" class="btn btn-primary">Submit</button>
 
 </div>
-</div>
-</div>
-</div>
-
-</div>        
-      
-<br><br><br>  
-        
-         <!-- /.container -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-inline">
-							<li><a href="home.jsp">Home</a></li>
-							<li class="footer-menu-divider"></li>
-							<li><a href="about.jsp">About</a></li>
-							<li class="footer-menu-divider"></li>
-							<li><a href="ContactUs.jsp">Contact</a></li>
-						</ul>
-						<p class="copyright text-muted small">Copyright &copy;
-							Phineas 2016 - Aravind Marshall</p>
+						</div>
 					</div>
 				</div>
+
 			</div>
-		</footer>
+
+			<br>
+			<br>
+			<br>
+
+			<!-- /.container -->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="list-inline">
+								<li><a href="home.jsp">Home</a></li>
+								<li class="footer-menu-divider"></li>
+								<li><a href="about.jsp">About</a></li>
+								<li class="footer-menu-divider"></li>
+								<li><a href="ContactUs.jsp">Contact</a></li>
+							</ul>
+							<p class="copyright text-muted small">Copyright &copy;
+								Phineas 2016 - Aravind Marshall</p>
+						</div>
+					</div>
+				</div>
+			</footer>
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+			<!-- jQuery -->
+			<script src="js/jquery.js"></script>
 
-		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-
+			<!-- Bootstrap Core JavaScript -->
+			<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

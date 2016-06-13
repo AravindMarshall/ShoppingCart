@@ -38,6 +38,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li>Welcome, ${ param.userId }  </li>
                     <li class="active"><a href="home.jsp">Home</a></li>
     				<li><a href="New or Old.jsp">Buyer</a></li>
     				<li><a href="New or Old.jsp">Seller</a></li>

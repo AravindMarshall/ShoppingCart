@@ -54,6 +54,7 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
+					<li>Welcome, ${ param.userId }  </li>
 					<li class="active"><a href="New.jsp">New Cars</a></li>
 					<li><a href="Used.jsp">Used Cars</a></li>
 				</ul>

@@ -20,6 +20,12 @@
 .jumbotron {background color = #2E2D88;
 	color: blue;
 }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+  }
 </style>
 <title>Phineas - Home</title>
 <!-- Bootstrap Core CSS -->
@@ -48,14 +54,18 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Phineas</span> <span class="icon-bar"></span>
-					<span class="icon-bar"></span> <span class="icon-bar"></span>
+					<span class="icon-bar"> </span> <span class="icon-bar">
+					</span>
 				</button>
 				<a class="navbar-brand topnav" href="home.jsp">Phineas</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-center">
+				<li>Welcome ${ param.userId }  </li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">	
 					<li class="active"><a href="home.jsp">Home</a></li>
 					<li><a href="New or Old.jsp">Buyer</a></li>
 					<li><a href="New or Old.jsp">Seller</a></li>
@@ -67,11 +77,12 @@
 		</div>
 		<!-- /.container -->
 	</nav>
-
+	<br>
 	<div class="container">
 		<div class="jumbotron">
-			<p class="bg-primary">Phineas.com</p>
-			<div class="dropdown">
+			<div class="row">
+			 <div class="col-sm-2">
+			   <div class="dropdown">
 				<button class="btn btn-primary dropdown-toggle" type="button"
 					data-toggle="dropdown">
 					Car Models <span class="caret"></span>
@@ -81,10 +92,82 @@
 					<li><a href="#">Maruti</a></li>
 					<li><a href="#">Benz</a></li>
 				</ul>
-			</div>
-		</div>
+			</div></div>
+			
+				<div class="col-sm-2">
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button"
+					data-toggle="dropdown">
+					Car accessories <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Engine</a></li>
+					<li><a href="#">Wheel</a></li>
+					<li><a href="#">Mirror</a></li>
+				</ul>
+			</div></div>
+		</div></div>
 	</div>
-	<div class="container">
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="Car1.jpg" alt="Car1" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Car</h3>
+          <p>Car - Top Models</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Car2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Car2</h3>
+          <p>Awesome look and ride</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="Car3.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Car3</h3>
+          <p>Enjoy the ride</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="Car4.jpg" alt="Car4" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Car4</h3>
+          <p>Beautiful look</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  <div class="container">
 		<div class="Col-md-3">
 			<ul class="nav nav-pills nav-justified">
 				<li class="active"><a href="home.jsp">Home</a></li>
@@ -95,8 +178,7 @@
 			</ul>
 		</div>
 	</div>
-
-
+  
 	<div class="Container">
 		<div class="jumbotron">
 

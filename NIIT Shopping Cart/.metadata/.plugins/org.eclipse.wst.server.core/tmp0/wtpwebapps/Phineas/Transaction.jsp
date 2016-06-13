@@ -35,20 +35,20 @@
 </head>
 
 <body>
-<img class="img-responsive" src="F:\Sample Car pictures\Car 3d.jpg">
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header navbar-center">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Shopping Cart</span>
-                    <span class="icon-bar">New Cars</span>
-                    <span class="icon-bar">Used Cars</span>
+                    <span class="sr-only">Phineas</span>
+                    <span class="icon-bar">Transaction</span>
+                    <span class="icon-bar">Transaction View</span>
                 </button>
-                <a class="navbar-brand topnav" href="home.jsp">Shopping Cart</a>
-            <a class="navbar-brand topnav navbar-center" href="New.jsp">New Cars</a>
-            <a class="navbar-brand topnav navbar-center" href="Used.jsp">Used Cars</a>
+                <a class="navbar-brand topnav" href="home.jsp">Phineas</a>
+            <a class="navbar-brand topnav navbar-center" href="New.jsp">Transaction</a>
+            <a class="navbar-brand topnav navbar-center" href="Used.jsp">Transaction View</a>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -56,22 +56,33 @@
 
 <br><br><br><br><br>
 
-        <!-- My website Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright text-muted small">Copyright &copy; Shopping Cart 2016 - Aravind Marshall</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        
+		<!-- /.container -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-inline">
+							<li><a href="home.jsp">Home</a></li>
+							<li class="footer-menu-divider"></li>
+							<li><a href="about.jsp">About</a></li>
+							<li class="footer-menu-divider"></li>
+							<li><a href="ContactUs.jsp">Contact</a></li>
+						</ul>
+						<p class="copyright text-muted small">Copyright &copy;
+							Phineas 2016 - Aravind Marshall</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
