@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class=jumbotron>
+<div class="container">
+   <img class="img-responsive" src="F:\Sample Car pictures\Background Car.jpg" alt="Car" width="960" height="645"> 
+</div>
+<form role="form">
+<div class="container">
+<div class="jumbotron">
+    <div class="navbar-header">
+       <h1><a class="navbar-brand animate" href="home.jsp">Shopping Cart</a>
+      </h1>
+      </div>
+    </div>
+
+<div class= "Login">
+<div class="container">
+  <h2>Sign In </h2>
+  <label for "Name">User ID</label>
+<input type = "text" class="userId" Id = "Name"><br><br>
+</div>
+<div class= "Login">
+<label for "Pass">Password</label>
+<input type = "password" class="form-control" Id = "pass"><br><br>
+</div>
+<button type="Reset" class="btn btn-danger">Reset</button>
+<button type="submit" class="btn btn-default">Submit</button>
+
+</div>
+</div>
+</div>
+</form>
+  
+<img class="img-responsive" src="">
+</div>
+
+</body>
+</html>

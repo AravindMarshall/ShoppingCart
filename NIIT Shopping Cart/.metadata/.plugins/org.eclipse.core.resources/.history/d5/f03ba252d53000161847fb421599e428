@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shopping Cart-Register</title>    
+<body>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        
+<br><br><br><br><br>        
+        
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-5g-32" align = "right"><hr>
+                    <p>--------Copyright &copy; Shopping Cart 2016 - Marshall</p>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>

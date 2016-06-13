@@ -1,0 +1,151 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    
+<style>
+.jumbotron{
+background color = #2E2D88;
+color:blue;
+}
+
+</style>
+<title>ShoppingCart</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+	<p class="bg-primary">Shopping Chart</p>
+	<div class="dropdown">
+  		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Car Models
+  		<span class="caret"></span></button>
+  		<ul class="dropdown-menu">
+    	<li><a href="#">Ferrai</a></li>
+    	<li><a href="#">Maruti</a></li>
+    	<li><a href="#">Benz</a></li>
+  		</ul>
+	</div>
+</div>
+</div>
+	<div class="container">
+	<div class="Col-md-3">
+	<ul class="nav nav-pills nav-justified">
+    <li class="active"><href="home.jsp">Home</a></li>
+    <li><a href="New or Old.jsp">Buyer</a></li>
+    <li><a href="New or Old.jsp">Seller</a></li>
+    <li><a href="ContactUs.jsp">Contact us</a></li>
+    <li><a href="Login.jsp">Sign In</a>
+  	</ul>
+	</div>                      
+</div>
+
+
+    <div class="container">
+    <div class="jumbotron">
+
+        <div class="row">
+                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car1.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car1.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car2.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car2.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car3.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car3.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car4.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car4.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car5.png">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car5.png" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car6.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car6.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car7.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car7.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car8.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car8.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car9.png">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car9.png" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car10.png">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car10.png" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car11.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car11.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="F:\Sample Car pictures\Car12.jpg">
+                    <img class="img-responsive" src="F:\Sample Car pictures\Car12.jpg" alt="" width="400" height="300">
+                </a>
+            </div>
+        </div>
+
+        
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-5g-32" align = "right"><hr>
+                    <font size="5" color="black">--------Copyright &copy; Shopping Cart 2016 - Marshall</font>
+                </div>
+            </div>
+            </div></div>
+            
+        </footer>
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html> 

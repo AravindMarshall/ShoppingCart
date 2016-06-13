@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>ShoppingCart Login</title>
+</head>
+<body>
+
+<form role="form">
+<div class="container">
+<div class="jumbotron">
+    <div class="navbar-header">
+       <h1><a class="navbar-brand animate" href="home.jsp">Shopping Cart</a>
+      </h1>
+      </div>
+    </div>
+
+<div class= "Login">
+<div class="container">
+  <h2>Sign In </h2>
+  <label for "Name">User ID</label>
+<input type = "text" class="userId" Id = "Name"><br><br>
+</div>
+<div class= "Login">
+<label for "Pass">Password</label>
+<input type = "password" class="form-control" Id = "pass"><br><br>
+</div>
+<button type="Reset" class="btn btn-danger">Reset</button>
+<button type="submit" class="btn btn-default">Submit</button>
+<div class="embed-responsive embed-responsive-12by10">
+  <iframe class="embed-responsive-item" src="F:\Sample Car pictures\Tata Nano.png"></iframe>
+</div>
+</div>
+</div>
+</form>
+  
+</body>
+</html>
