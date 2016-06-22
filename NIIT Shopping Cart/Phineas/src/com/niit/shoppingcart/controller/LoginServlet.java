@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
 		String password = (String) request.getParameter("password");
 		UserDAO userDAO = new UserDAO();
 		
-		if (userDAO.isValidCredentials(userId, password)== true)
+		if (userDAO.isValidCredential(userId, password)== true)
 			{
 			RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
 			dispatcher.forward(request, response);

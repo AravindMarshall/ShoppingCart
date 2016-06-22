@@ -47,58 +47,81 @@
 		</div>
 		<!-- /.container -->
 	</nav>
-
-
+	
 	<br>
 	<br>
 	<br>
-	<br>
-	<br>
 
-	<form action="home.jsp" method="post">
-		<!-- img src="Car6.jpg"-->
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8">
+	<form action="LoginServlet" method="post">
+	<!-- form role="form" -->
+	<div class= "form-group">
+	<div class="container">
+			
+	<div class="row">
+	
+	<div class="col-lg-8">
+		<div class="register">
+		<h2><font color="Green" style="bold">Sign Up</font></h2></div><br>
+	
+	<div class="col-lg-8">							
+	<label for ="Name">User Name </label>
+	<input type = "text" class="form-control" name = "userId" placeholder=" User name " minlength="5" maxlength="15">
+	</div><br>
+	
+	<div class="col-lg-8">
+	<label for ="Pass">Password</label>
+	<input type = "password" class="form-control" name = "password" placeholder=" password " minlength="6" maxlength="15">
+	</div><br>
+  
+  	<div class="col-lg-8">
+	<label for = "Email">Email Address:</label>
+	<input type = "email" class="form-control" name = "email" placeholder=" Email Address " >
+	</div><br>
+  
+   	<div class="col-lg-8">
+	<label for = "Mobile">Mobile No:  </label>
+	<input type = "number" class="form-control" name = "mobile-no" placeholder=" Mobile number ">
+	</div><br>
+  
+  	<div class="col-lg-8">
+	<label for ="Address">Address: </label>
+	<input type = "text" class="form-control" name = "address" placeholder=" Address ">
+	</div><br>
 
-					<div class="col-sm-4">
-						<div class="register">
-							<div class="container">
-								<h2>Sign Up</h2>
-								<labelfor "Name">User Name </label>
-	<input type = "text" class="userId" name = "userId" placeholder=" User name "><br><br>
-	<label for "Pass">Password</label>
-	<input type = "password" class="password" name = "password" placeholder=" password "><br><br>
-  <label for "Mobile">Email Address:</label>
-	<input type = "text" class="email" name = "email" placeholder=" Email Address "><br><br>
-  <label for "Name">Mobile No:  </label>
-	<input type = "text" class="mobile-no" name = "mobile-no" placeholder=" Mobile number "><br><br>
-  <label for "Name">Address: </label>
-	<input type = "text" class="address" name = "address" placeholder=" Address "><br><br>
-<label for "Name">City: </label>
-	<input type = "text" class="city" name = "city" placeholder=" City "><br><br>
-<label for "Name">State: </label>
-	<input type = "text" class="state" name = "state" placeholder=" State "><br><br>
-<label for "Name">Country: </label>
-	<input type = "text" class="country" name = "country" placeholder=" Country "><br><br>
-<label for "Name">Pincode: </label>
-	<input type = "text" class="pincode" name = "pincode" placeholder=" Pincode "><br><br>
+    <div class="col-lg-8">
+	<label for ="City">City: </label>
+	<input type = "text" class="form-control" name = "city" placeholder=" City ">
+	</div><br>
 
+	<div class="col-lg-8">
+	<label for="State">State: </label>
+	<input type = "text" class="form-control" name = "state" placeholder=" State ">
+	</div><br>
 
-<button type="Reset" class="btn btn-danger">Reset</button>
-<button type="submit" class="btn btn-primary">Submit</button>
+	<div class="col-lg-8">
+	<label for ="Country">Country: </label>
+	<input type = "text" class="form-control" name = "country" placeholder=" Country ">
+	</div><br>
+	
+	<div class="col-lg-8">
+	<label for ="Pincode">Pincode: </label>
+	<input type = "number" class="form-control" name = "pincode" placeholder=" Pincode ">
+	</div><br>
 
+	<div class="col-lg-8" align ="center"><br>	
+		<button type="submit" class="btn btn-primary">Submit</button>
+		<button type="Reset" class="btn btn-danger">Reset</button>
+		<a href ="Login.jsp"><!-- h3 -->Already Registered<!-- /h3 --></a>
+	</div>
 </div>
-						</div>
-					</div>
-				</div>
+</div>
+</div>
+</div>
+</form>
+</form>
 
-			</div>
-
-			<br>
-			<br>
-			<br>
-
+<br><br>
+	
 			<!-- /.container -->
 			<footer>
 				<div class="container">

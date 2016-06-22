@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+/**
+ * @author Anusha
+ *
+ */
+package com.niit.shoppingcart.controller;
+import com.niit.shoppingcart.dao.UserDAO;
+@Controller
+
+public class UserController {
+	@Autowired
+	UserDAO userDAO;
+	
+	@RequestMapping

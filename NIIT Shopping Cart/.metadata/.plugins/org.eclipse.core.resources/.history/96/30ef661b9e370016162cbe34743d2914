@@ -1,0 +1,30 @@
+package com.niit.phineas.bean;
+
+import org.springframework.stereotype.Repository;
+
+public class Category {  
+	  
+	private String setName;  
+	private String setId;  
+	private String setDescription;
+	
+	public String getSetName() {
+		return setName;
+	}
+	public void setSetName(String setName) {
+		this.setName = setName;
+	}
+	public String getSetId() {
+		return setId;
+	}
+	public void setSetId(String setId) {
+		this.setId = setId;
+	}
+	public String getSetDescription() {
+		return setDescription;
+	}
+	public void setSetDescription(String setDescription) {
+		this.setDescription = setDescription;
+	}
+	
+}

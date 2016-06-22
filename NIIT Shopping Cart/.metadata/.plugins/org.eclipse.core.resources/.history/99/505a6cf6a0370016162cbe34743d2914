@@ -1,0 +1,29 @@
+package com.niit.phineas.dao;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Repository;
+
+import com.niit.phineas.bean.Category;
+
+@Repository
+public class CategoryDAO {
+
+	public List<Category> getAllCategories()
+	{
+	List<Category>	list= new ArrayList<Category>();
+	Category c1=new Category();
+	c1.setSetId("Alto134");
+	c1.setSetName("Alto");
+	c1.setSetDescription("This car is too good");
+	list.add(c1);
+	
+	c1= new Category();
+	c1.setSetId("Swift145");
+	c1.setSetName("Swift");
+	c1.setSetDescription("Awesome look");
+	list.add(c1);
+	}
+	
+}

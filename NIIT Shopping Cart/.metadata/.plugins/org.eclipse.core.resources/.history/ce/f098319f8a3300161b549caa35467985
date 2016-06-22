@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+        response.getWriter().append("Served at: ").append(request.getContextPath());
+        String Id=request.getParameter("Id");
+        int Id1=Integer.parseInt(Id);
+        if(Id1==1){
+            String name="Narnia";
+            String author="C.S.Lewis";
+            String description="This book tells about the story of Narnia.";
+            request.setAttribute("name",name);
+            request.setAttribute("author", author);
+            request.setAttribute("description",description);
+        }
+        if(Id1==2){
+        String name="Seven Eves";
+        String author="Neal Stephenson";
+        String description="This book portrays alien invasion on earth.";
+        request.setAttribute("name",name);
+        request.setAttribute("author", author);
+        request.setAttribute("description",description);
+        }
+        if(Id1==3){
+            String name="Replica";
+            String author="Jenna Black";
+            String description="This book tells about the story of a girl.";
+            request.setAttribute("name",name);
+            request.setAttribute("author", author);
+            request.setAttribute("description",description);
+                }
+        RequestDispatcher dispatch=request.getRequestDispatcher("ProductInfo.jsp");
+        dispatch.forward(request, response);
+        } 
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    
+}
+}

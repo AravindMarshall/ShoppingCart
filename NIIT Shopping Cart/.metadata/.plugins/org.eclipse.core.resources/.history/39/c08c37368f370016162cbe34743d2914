@@ -1,0 +1,5 @@
+package com.niit.phineas.dao;
+
+public class SupplierDAO {
+
+}

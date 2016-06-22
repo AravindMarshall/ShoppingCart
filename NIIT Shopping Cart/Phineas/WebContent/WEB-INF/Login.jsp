@@ -16,16 +16,16 @@
 <form action="LoginServlet" method ="post">
 
 <div class="container">
-  <body background="F:\Sample Car pictures\Car1.jpg">
+  <!--body background="Car1.jpg"-->
       </div>
-    </div>
+ 
 
 <div class= "Login">
 <div class="container">
   <h2>Sign In </h2>
-  <label for "Name">User Name </label>
+  <label for ="Name">User Name </label>
 <input type = "text" class="userId" name = "userId" placeholder=" User name "><br><br>
-<label for "Pass">Password</label>
+<label for ="Pass">Password</label>
 <input type = "password" class="password" name = "password" placeholder=" password "><br><br>
 </div>
 <button type="Reset" class="btn btn-danger">Reset</button>

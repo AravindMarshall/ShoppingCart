@@ -1,0 +1,19 @@
+
+package com.niit.phineas.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class UserDAO {
+public boolean isValidUser(String userId, String password)
+{
+	if (userId.equals("aravind")&& password.equals("marshall"))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+}

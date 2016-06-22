@@ -19,27 +19,27 @@
 
 
 		<div class="container">
-			<body background="F:\Sample Car pictures\Car1.jpg">
+			<body background="Car1.jpg">
 		</div>
 
 		<div class="Login">
 			<div class="container">
 				<h2>Sign In</h2>
-				<form role="form">
+				<!-- form role="form"-->
 					<div class="form-group">
 						<div class="col-sm-4">
 							<label for="Name">User Name </label> <input type="text"
-								class="form-control" name="userId" placeholder=" User name ">
+								class="form-control" name="userId" min="5" maxlength="10" placeholder=" User name ">
 						</div>
 						<!-- div class="form-group"-->
 						<div class="col-sm-4">
 							<label for="Pass">Password</label> <input type="password"
-								class="form-control" name="password" placeholder=" password ">
+								class="form-control" name="password" minlength="6" maxlength="10" placeholder=" password ">
 						</div>
 						<div class="col-sm-4"><br>
 							<button type="submit" class="btn btn-primary">Submit</button>
 							<button type="Reset" class="btn btn-danger">Reset</button>
-							<a href="Register.jsp"><h3>Sign Up</h3></a>
+							<a href="Register.jsp"><!--h3-->Sign Up<!--/h3--></a>
 							
 						</div>
 					</div>

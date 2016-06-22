@@ -1,0 +1,31 @@
+package com.niit.shoppingcart.controller;
+
+
+
+import com.niit.shoppingcart.dao.UserDAO;
+@Controller
+
+public class UserController {
+	@Autowired
+	UserDAO userDAO;
+	
+	@RequestMapping("/isValidUser")
+	public ModelAndView showMessage(@Request param (value="name") String name, @Request Param (value="password") String password)
+	{
+		System.out.println("In Controller");
+	
+	String message;
+	if (userDAO.isValidCredentials(name, password))
+	{
+		message="Valid Credentials";
+	}
+	else
+	{
+		message="Invalid Credentials";		
+	}
+	ModelAndView mv= new ModelAndView("login");
+	mv.addObject("message", message);
+	mv.addObject("password", name);
+	return mv;
+	
+}

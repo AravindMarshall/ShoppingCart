@@ -1,0 +1,44 @@
+package com.niit.phineas.dao;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.niit.phineas.bean.Supplier;
+
+
+@Repository
+public class SupplierDAO {
+	
+	@Autowired
+	private Supplier supplier;
+	
+	public List<Supplier> getAllSuppliers()
+	{
+		List<Supplier> list = new ArrayList<Supplier>();
+		
+		Supplier s = new Supplier();
+		s.setId("SUP123");
+		s.setName("Maruthi");
+		s.setAddress("Chennai");
+		list.add(s);
+		
+		 s = new Supplier();
+			s.setId("SUP125");
+			s.setName("Ferrai");
+			s.setAddress("Coimbatore");
+			list.add(s);
+			
+			 s = new Supplier();
+				s.setId("SUP146");
+				s.setName("Benz");
+				s.setAddress("Chennai");
+				list.add(s);
+		return list;
+	}
+}

@@ -1,0 +1,16 @@
+package com.niit.shoppingcart.controller;
+
+import org.springframework.bean.factory.annotation.Autowired;
+import org.springframework.bean.factory.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+
+import com.niit.shoppingcart.dao.UserDAO;
+
+public class UserController {
+	@Autowired
+	UserDAO userDAO;
+	
+
+}

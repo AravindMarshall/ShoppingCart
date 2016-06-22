@@ -1,0 +1,9 @@
+package com.niit.phineas.dao;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/getAllCatergory")
+public class CatergoryDAO {
+
+	
+}

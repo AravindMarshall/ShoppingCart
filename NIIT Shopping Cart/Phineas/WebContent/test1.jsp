@@ -18,10 +18,47 @@
 Testing part
 <br>
 
-<form action="process.jsp">  
-Enter Name:<input type="text" name="name" /><br/><br/>  
-<input type="submit" value="submit"/>  
+<!-- 
+var ImageSource="";
+$('.yourImageClass').click(function(){
+     ImageSource=$(this).attr('src');
+});
+ 
+$("img").click(function()
+{ var $dialog = $('<div>Hello</div>') 
+
+.html(' 
+<img src="localhost:81/keprandemo/media/catalog/product/cache/1/…; width="200" height="200" alt="Car1">')
+ 
+.dialog({ 
+	autoOpen: true, 
+	resizable: false, 
+	draggable: false, 
+	width: 600, 
+	height:600, 
+	modal: true, 
+	title: 'Create Your Own PopUp Window' 
+}); 
+
+}); 
+-->
+ 
+</script> 
 </form>  
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+			<img src="Car 3d.jpg" width="800" height="1500">
+		</div>
+		<div class="col-lg-4">
+			<div class="jumbotron">
+			
+			</div>
+		</div>
+	    
+	</div>
+</div>
 
 
 </body>

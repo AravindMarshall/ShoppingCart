@@ -123,7 +123,7 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="Car1.jpg" alt="Car1" width="460" height="345">
+        <img src="Car1.jpg" carId="car1" alt="Car1" width="460" height="345">
         <div class="carousel-caption">
           <h3>Car</h3>
           <p>Car - Top Models</p>
@@ -131,7 +131,7 @@
       </div>
 
       <div class="item">
-        <img src="Car2.jpg" alt="Chania" width="460" height="345">
+        <img src="Car2.jpg" alt="Car2" width="460" height="345">
         <div class="carousel-caption">
           <h3>Car2</h3>
           <p>Awesome look and ride</p>
@@ -139,7 +139,7 @@
       </div>
     
       <div class="item">
-        <img src="Car3.jpg" alt="Flower" width="460" height="345">
+        <img src="Car3.jpg" alt="Car3" width="460" height="345">
         <div class="carousel-caption">
           <h3>Car3</h3>
           <p>Enjoy the ride</p>
@@ -183,20 +183,20 @@
 		<div class="jumbotron">
 
 			<div class="row">
-				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="Car1.jpg"> <img
-						class="img-responsive" src="Car1.jpg" alt="" width="400"
+				<div class="col-lg-2 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="InfoServlet?id=1"> 
+					<img class="img-responsive" src="Car1.jpg" id="1" alt="" width="400"
 						height="300">
 					</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="Car2.jpg"> <img
+				<div class="col-lg-2 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="InfoServlet?id=2"> <img
 						class="img-responsive" src="Car2.jpg" alt="" width="400"
 						height="300">
 					</a>
 				</div>
-				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-					<a class="thumbnail" href="Car3.jpg"> <img
+				<div class="col-lg-2 col-md-4 col-xs-6 thumb">
+					<a class="thumbnail" href="InfoServlet?id=3"> <img
 						class="img-responsive" src="Car3.jpg" alt="" width="400"
 						height="300">
 					</a>

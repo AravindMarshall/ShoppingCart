@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+<html>
+<head>
+
+<title>Phineas index</title>
+</head>
+<body>
+
+${message}
+
+<form:form action="isValidUser" method="post" >
+<h2>Sign In</h2>
+
+<br><Label> User Name </label> 
+<input type="text" class="form-control" name="userId" min="5" maxlength="10" placeholder=" User name ">
+<br><br>
+
+<label for="Pass">Password</label> <input type="password"
+class="form-control" name="password" minlength="6" maxlength="10" placeholder=" password ">
+
+<button type="submit" class="btn btn-primary">Submit</button>
+<button type="Reset" class="btn btn-danger">Reset</button>
+<a href="Register.jsp"><h3>Sign Up</h3></a>
+							
+						</div>
+					</div>
+				</form:form>
+
+</body>
+</html>

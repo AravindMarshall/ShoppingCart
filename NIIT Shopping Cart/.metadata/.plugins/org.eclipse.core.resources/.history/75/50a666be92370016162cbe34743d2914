@@ -1,0 +1,27 @@
+package com.niit.phineas.dao;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+
+public class CategoryDAO {
+
+
+	@RequestMapping("/getAllCategories")
+	public ModelAndView getAllCategories()
+	{
+		System.out.println("getAllCategories");
+		List<Category> categorylist = CategoryDAO.getAllCategories();
+		ModelAndView mv= new ModelAndView("/categorylist");
+		mv.addObject("categorylist", categorylist);
+	}
+	
+	@RequestMapping("/updateCategories")
+	public ModelAndView updateCategories(@ModelAttribute(category) ArrayList)
+	{
+		int updateCategories = CategoryDAO.updateCategories("category");
+		ModelAndView mv= new ModelAndView("/categorylist");
+		mv.addObject("categorylist", categorylist);
+	}
+	
+}
