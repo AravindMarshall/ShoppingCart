@@ -1,0 +1,5 @@
+package com.niit.phineas.config;
+
+public class ApplicationContextConfig {
+
+}

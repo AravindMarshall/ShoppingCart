@@ -76,12 +76,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.niit.webappBackEnd"/>
+			<item value="com.niit.webapp_front"/>
 			<item value="com.niit.phineas"/>
 		</list>
 		<list key="groupId">
 			<item value="com.niit"/>
 		</list>
 		<list key="artifactId">
+			<item value="webappBackEnd"/>
+			<item value="webapp_front"/>
 			<item value="phineas"/>
 		</list>
 		<list key="projectNameTemplate">
