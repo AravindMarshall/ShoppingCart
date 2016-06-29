@@ -32,25 +32,26 @@ public class Test2 {
 		Test2 t = new Test2();
 		Categorydao  categorydao =  (Categorydao) context.getBean("categoryDao");
 		Category category = new Category ();
-		/*
-		 * category.setId("Alto556");
+		
+		category.setId("Alto556");
 		 
 		category.setName("Alto");
 		category.setDescription("Cheapest price car");
 		t.createCategory(category);
 		categorydao.saveOrUpdate(category);
-		*/
 		
-		/*
-		List<Category> list = new List<Category>();
+		categorydao.get("6");
 		
-		t.display(List<Category>);
+		/* List<Category> list = new ArrayList<Category>();
+		
+		t.display(list);
 		
 		//Deletion process
-		
+		/*
 		categorydao.delete("Alto556");
 		*/
-	}
+		
+			}
 
 	private static void display(List<Category> list) {
 		for( Category c : list)

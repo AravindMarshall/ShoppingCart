@@ -5,34 +5,43 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="category")
-public class Category {
+import org.springframework.stereotype.Component;
 
-	private String id;
-	private String name;
-	private String description;
+@Entity
+@Table(name = "SUPPLIER")
+@Component
+public class Supplier {
 	
 	@Id
-	@Column(name = "ID")
+	@Column(name="id")
+	private String id;
+	
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getDescription() {
-		return description;
+
+	public String getAddress() {
+		return address;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
+
+	private String name;
+	
+	private String address;
 	
 }
-
