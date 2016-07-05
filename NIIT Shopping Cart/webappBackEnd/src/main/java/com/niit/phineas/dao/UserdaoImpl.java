@@ -38,9 +38,9 @@ public class UserdaoImpl implements Userdao {
 	}
 
 	@Transactional
-	public void delete(String id) {
+	public void delete(String userid) {
 		User user = new User();
-		user.setId(id);
+		user.setUserid(userid);
 		sessionFactory.getCurrentSession().delete(user);
 	}
 
@@ -59,8 +59,8 @@ public class UserdaoImpl implements Userdao {
 	}
 	
 	@Transactional
-	public boolean isValidUser(String id, String password, boolean isAdmin) {
-		String hql = "from User where id=" + id + " and " + " name =" + password;
+	public boolean isValidUser(String UserName, String UserPassword, boolean isAdmin) {
+		String hql = "from User where username= '" +UserName + "' and userpassword = '" +UserPassword +"' and isAdmin = " +isAdmin;
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		
 		@SuppressWarnings("unchecked")

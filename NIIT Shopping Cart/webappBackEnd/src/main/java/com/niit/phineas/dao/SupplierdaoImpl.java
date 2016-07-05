@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.phineas.model.Category;
 import com.niit.phineas.model.Supplier;
 
-@Repository("supplierDAO")
+@Repository("supplierdao")
 public class SupplierdaoImpl implements Supplierdao {
 	
 

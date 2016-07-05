@@ -14,26 +14,36 @@ import org.springframework.stereotype.Component;
 public class User {
 
 	@Id
-	private String id;
-	private String password;
-	public String getId() {
-		return id;
+	private String userid;
+	private String username;
+	private String userpassword;
+	
+	public String getUserid() {
+		return userid;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setUserid(String userid) {
+		this.userid = userid;
 	}
-	public String getPassword() {
-		return password;
+	public String getUsername() {
+		return username;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setUsername(String username) {
+		this.username = username;
 	}
+	public String getUserpassword() {
+		return userpassword;
+	}
+	public void setUserpassword(String userpassword) {
+		this.userpassword = userpassword;
+	}
+	
 	public boolean isAdmin() {
 		return isAdmin;
 	}
 	public void setAdmin(boolean isAdmin) {
 		this.isAdmin = isAdmin;
 	}
+	
 	@Column(name = "admin")
 	private boolean isAdmin;
 }

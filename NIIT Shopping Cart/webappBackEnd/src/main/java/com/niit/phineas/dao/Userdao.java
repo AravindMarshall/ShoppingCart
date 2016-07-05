@@ -4,9 +4,7 @@ import java.util.List;
 
 import com.niit.phineas.model.User;
 
-
 public interface Userdao {
-
 
 	public List<User> list();
 
@@ -16,7 +14,7 @@ public interface Userdao {
 
 	public void delete(String id);
 	
-	public boolean isValidUser(String id, String name, boolean isAdmin);
+	public boolean isValidUser(String UserName, String UserPassword, boolean isAdmin);
 
 
 }
