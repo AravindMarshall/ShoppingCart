@@ -1,6 +1,8 @@
 
 package com.niit.phineas.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,7 +11,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.phineas.dao.Userdao;
+import com.niit.phineas.model.Supplier;
+import com.niit.phineas.model.User;
 import com.niit.phineas.model.UserDetails;
+/* import com.niit.phineas.model.UserDetails;*/
 
 
 @Controller
@@ -20,36 +25,65 @@ public class UserController {
 	
 	@RequestMapping("/")
 	public String gotohome() {
-		return "Admin";
+		return "Login";
 	}
 
-		
-	@RequestMapping("/isValidUser")
-	public ModelAndView showMessage(@RequestParam(value = "Name") String UserName,
-			@RequestParam(value = "Password") String UserPassword) {
-		System.out.println("in controller");
 
+	@RequestMapping("/getAllUsers")
+	public ModelAndView getAllUsers() {
+		List<User> userList = userdao.list();
+
+		System.out.println("getAllSuppliers");
+
+		ModelAndView mv = new ModelAndView("/UserList");
+		mv.addObject("userList", userList);
+		return mv;
+	}
+	
+	@RequestMapping("/isValidUser")
+	public ModelAndView showMessage(@RequestParam(value = "name") String name,
+			@RequestParam(value = "password") String password) {
+		System.out.println("in controller");
+		
 		String message;
 		ModelAndView mv;
-		if (userdao.isValidUser(UserName, UserPassword,true)) 
+		if (userdao.isValidUser(name, password, true)) 
 		{
 			message = "Valid credentials";
-			 mv = new ModelAndView("adminHome");
+			 mv = new ModelAndView("Admin");
+			 System.out.println(message);
+				
 		} else {
 			message = "Invalid credentials";
-			 mv = new ModelAndView("login");
+			 mv = new ModelAndView("Login");
+			 System.out.println(message);
 		}
 
 		mv.addObject("message", message);
-		mv.addObject("username", UserName);
+		mv.addObject("UserName", name);
 		return mv;
+	}
+
+	@RequestMapping ("/Login")
+	public String login()
+	{
+		return "Login";
+	}
+	@RequestMapping ("/register1")
+	public String register()
+	{
+		return "register";
 	}
 
 	@RequestMapping("/register")
 		public ModelAndView registerUser(@ModelAttribute UserDetails userDetails) {
-		/*	userdao.saveOrUpdate(userDetails); */
-		  return new ModelAndView("/adminHome");
-		 }
-
+ 		userdao.saveOrUpdate(userDetails);
+		  return new ModelAndView("/register");
+	}
+	
+	@RequestMapping("/admin")
+	public String gotoadmin() {
+		return "Admin";
+	}
 }
 

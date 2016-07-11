@@ -11,17 +11,18 @@
 </head>
 <body>
 
-${message}
+	${message}
 
-<form:form action="home" method="post" >
-<h2>Sign In</h2>
+	<form:form action="home" method="post">
+		<h2>Sign In</h2>
 
-<br>User Name: <input type="text" name="name">
-<br><br>
+		<br>User Name: <input type="text" name="name">
+		<br>
+		<br>
 
 Password: <input type="password" name="password">
 
-<Input type="submit">Submit
+		<Input type="submit">Submit
 <Input type="Reset">Reset
 
 					

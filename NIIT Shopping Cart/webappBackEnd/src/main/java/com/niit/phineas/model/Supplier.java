@@ -8,14 +8,14 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
 @Entity
-@Table(name = "SUPPLIER")
+@Table(name = "supplier")
 @Component
 public class Supplier {
-	
+
 	@Id
-	@Column(name="id")
+	@Column(name = "id")
 	private String id;
-	
+
 	public String getId() {
 		return id;
 	}
@@ -41,7 +41,7 @@ public class Supplier {
 	}
 
 	private String name;
-	
+
 	private String address;
-	
+
 }

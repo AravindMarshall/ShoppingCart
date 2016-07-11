@@ -13,21 +13,19 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Repository("categorydao")
 public class CategorydaoImpl implements Categorydao {
-	
 
 	@Autowired
 	private SessionFactory sessionFactory;
 
-
 	public CategorydaoImpl(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
+			this.sessionFactory = sessionFactory;
+		}
 
 	@Transactional
 	public List<Category> list() {
 		@SuppressWarnings("unchecked")
-		List<Category> listCategory = (List<Category>) sessionFactory.getCurrentSession()
-				.createCriteria(Category.class)
+
+		List<Category> listCategory = (List<Category>) sessionFactory.getCurrentSession().createCriteria(Category.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 
 		return listCategory;
@@ -47,17 +45,32 @@ public class CategorydaoImpl implements Categorydao {
 
 	@Transactional
 	public Category get(String id) {
-		String hql = "from Category where id=" + id;
+		String hql = "from Category where id=" + "'" + id + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
-		
+
 		@SuppressWarnings("unchecked")
 		List<Category> listCategory = (List<Category>) query.list();
-		
+
 		if (listCategory != null && !listCategory.isEmpty()) {
 			return listCategory.get(0);
 		}
-		
+
 		return null;
 	}
-}
 
+	@Transactional
+	public Category getByName(String name) {
+		String hql = "from Category where name=" + "'" + name + "'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+
+		@SuppressWarnings("unchecked")
+		List<Category> listCategory = (List<Category>) query.list();
+
+		if (listCategory != null && !listCategory.isEmpty()) {
+			return listCategory.get(0);
+		}
+
+		return null;
+	}
+
+}

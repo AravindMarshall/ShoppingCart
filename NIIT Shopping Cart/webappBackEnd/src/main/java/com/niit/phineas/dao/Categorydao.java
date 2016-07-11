@@ -10,9 +10,10 @@ public interface Categorydao {
 
 	public Category get(String id);
 
+	public Category getByName(String name);
+
 	public void saveOrUpdate(Category category);
 
 	public void delete(String id);
-
 
 }

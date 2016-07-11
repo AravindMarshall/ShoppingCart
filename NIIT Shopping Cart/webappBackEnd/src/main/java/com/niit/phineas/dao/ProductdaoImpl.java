@@ -13,11 +13,9 @@ import com.niit.phineas.model.Product;
 
 @Repository("productdao")
 public class ProductdaoImpl implements Productdao {
-	
 
 	@Autowired
 	private SessionFactory sessionFactory;
-
 
 	public ProductdaoImpl(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
@@ -26,8 +24,7 @@ public class ProductdaoImpl implements Productdao {
 	@Transactional
 	public List<Product> list() {
 		@SuppressWarnings("unchecked")
-		List<Product> listProduct = (List<Product>) sessionFactory.getCurrentSession()
-				.createCriteria(Product.class)
+		List<Product> listProduct = (List<Product>) sessionFactory.getCurrentSession().createCriteria(Product.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 
 		return listProduct;
@@ -47,17 +44,16 @@ public class ProductdaoImpl implements Productdao {
 
 	@Transactional
 	public Product get(String id) {
-		String hql = "from Product where id='" + id+"'";
+		String hql = "from Product where id='" + id + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
-		
+
 		@SuppressWarnings("unchecked")
 		List<Product> listProduct = (List<Product>) query.list();
-		
+
 		if (listProduct != null && !listProduct.isEmpty()) {
 			return listProduct.get(0);
 		}
-		
+
 		return null;
 	}
-
 }

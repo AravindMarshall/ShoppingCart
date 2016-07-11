@@ -14,11 +14,9 @@ import com.niit.phineas.model.Supplier;
 
 @Repository("supplierdao")
 public class SupplierdaoImpl implements Supplierdao {
-	
 
 	@Autowired
 	private SessionFactory sessionFactory;
-
 
 	public SupplierdaoImpl(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
@@ -27,8 +25,7 @@ public class SupplierdaoImpl implements Supplierdao {
 	@Transactional
 	public List<Supplier> list() {
 		@SuppressWarnings("unchecked")
-		List<Supplier> list = (List<Supplier>) sessionFactory.getCurrentSession()
-				.createCriteria(Supplier.class)
+		List<Supplier> list = (List<Supplier>) sessionFactory.getCurrentSession().createCriteria(Supplier.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 
 		return list;
@@ -48,16 +45,31 @@ public class SupplierdaoImpl implements Supplierdao {
 
 	@Transactional
 	public Supplier get(String id) {
-		String hql = "from Supplier where id=" + id;
+		String hql = "from Supplier where id= '" + id + "'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
-		
+
 		@SuppressWarnings("unchecked")
 		List<Supplier> list = (List<Supplier>) query.list();
-		
+
 		if (list != null && !list.isEmpty()) {
 			return list.get(0);
 		}
-		
+
+		return null;
+	}
+
+	@Transactional
+	public Supplier getByName(String name) {
+		String hql = "from Supplier where name=" + "'" + name + "'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+
+		@SuppressWarnings("unchecked")
+		List<Supplier> listSupplier = (List<Supplier>) query.list();
+
+		if (listSupplier != null && !listSupplier.isEmpty()) {
+			return listSupplier.get(0);
+		}
+
 		return null;
 	}
 

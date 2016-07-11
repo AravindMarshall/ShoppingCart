@@ -4,6 +4,9 @@ import java.util.List;
 
 import com.niit.phineas.model.User;
 
+import com.niit.phineas.model.UserDetails;
+
+
 public interface Userdao {
 
 	public List<User> list();
@@ -12,9 +15,14 @@ public interface Userdao {
 
 	public void saveOrUpdate(User user);
 
+	public void saveOrUpdate(UserDetails userDetails);
+
 	public void delete(String id);
 	
-	public boolean isValidUser(String UserName, String UserPassword, boolean isAdmin);
-
-
+	/* public boolean isValidUser(String id, String name, boolean isAdmin);
+*/
+	/* My code
+	 */
+	public boolean isValidUser(String name, String password, boolean isAdmin);
+	
 }
