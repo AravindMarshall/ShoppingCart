@@ -48,8 +48,8 @@
 								<br>
 								<button type="submit" class="btn btn-primary">Submit</button>
 								<button type="Reset" class="btn btn-danger">Reset</button>
-								<a href="<c:url value="/Register"/>" type="button"
-									class="btn btn-link">Sign In</a>
+								<a href="register" type="button"
+									class="btn btn-link">Sign Up</a>
 
 							</div>
 						</div>

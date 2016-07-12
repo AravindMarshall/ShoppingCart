@@ -1,33 +1,39 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Phineas - Used</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+<title>Phineas - Used</title>
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="css/landing-page.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+	rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -36,50 +42,56 @@
 
 <body>
 
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header navbar-center">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Shopping Cart</span>
-                    <span class="icon-bar">New Cars</span>
-                    <span class="icon-bar">Used Cars</span>
-                </button>
-                <a class="navbar-brand topnav" href="home.jsp">Shopping Cart</a>
-            <a class="navbar-brand topnav navbar-center" href="New.jsp">New Cars</a>
-            <a class="navbar-brand topnav navbar-center" href="Used.jsp">Used Cars</a>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-    </nav>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top topnav"
+		role="navigation">
+		<div class="container topnav">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header navbar-center">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Shopping Cart</span> <span class="icon-bar">New
+						Cars</span> <span class="icon-bar">Used Cars</span>
+				</button>
+				<a class="navbar-brand topnav" href="home.jsp">Shopping Cart</a> <a
+					class="navbar-brand topnav navbar-center" href="New.jsp">New
+					Cars</a> <a class="navbar-brand topnav navbar-center" href="Used.jsp">Used
+					Cars</a>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+	</nav>
 
-<br><br><br><br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 
-        <!-- My website Footer -->
-	
-		<!-- /.container -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-inline">
-							<li><a href="home.jsp">Home</a></li>
-							<li class="footer-menu-divider"></li>
-							<li><a href="about.jsp">About</a></li>
-							<li class="footer-menu-divider"></li>
-							<li><a href="ContactUs.jsp">Contact</a></li>
-						</ul>
-						<p class="copyright text-muted small">Copyright &copy;
-							Phineas 2016 - Aravind Marshall</p>
-					</div>
+	<!-- My website Footer -->
+
+	<!-- /.container -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="list-inline">
+						<li><a href="home.jsp">Home</a></li>
+						<li class="footer-menu-divider"></li>
+						<li><a href="about.jsp">About</a></li>
+						<li class="footer-menu-divider"></li>
+						<li><a href="ContactUs.jsp">Contact</a></li>
+					</ul>
+					<p class="copyright text-muted small">Copyright &copy; Phineas
+						2016 - Aravind Marshall</p>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
 
-		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 

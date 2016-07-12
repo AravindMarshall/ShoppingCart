@@ -33,16 +33,16 @@
 					<form role="form">
 						<div class="form-group">
 							<div class="col-xg-4 col-sm-4">
-								<label for="UserName">User Name </label> <input type="text"
-									class="form-control" name="UserName" required=""
+								<label for="name">User Name </label> <input type="text"
+									class="form-control" name="name" required="" 
 									placeholder=" User name ">
 							</div>
 
 							<!-- div class="form-group"-->
 							<div class="col-xg-4 col-sm-4">
-								<label for="UserPassword">Password</label> <input type="password"
-									class="form-control" name="UserPassword" required=""
-									placeholder=" password ">
+								<label for="password">Password</label> <input
+									type="password" class="form-control" name="password"
+									required="" placeholder=" password ">
 							</div>
 							<div class="col-sm-4">
 								<br>
@@ -57,30 +57,6 @@
 				</div>
 		</div>
 	</form:form>
-
-
-<h4>List of Registered Users</h4>
-
-<table width="50%">
-	<tr>
-	    <th align="left">S.No</th>
-		<th align="left">Id</th>
-		<th align="left">Name</th>
-		<th align="left">Password</th>
-		<th align="left">IsAdmin</th>
-		
-	</tr>
-	<c:forEach items="${userList}" var="user" varStatus="status">
-		<tr>
-			<td>${status.count}</td>
-			<td>${user.UserId}</td>
-			<td>${user.UserName}</td>
-			<td>${user.UserPassword}</td>
-			
-		</tr>
-	</c:forEach>
-</table>
-
 
 </body>
 </html>

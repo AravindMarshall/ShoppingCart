@@ -50,13 +50,12 @@
 			<div class="navbar-header navbar-center">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Shopping Cart</span> <span class="icon-bar">New
+					<span class="sr-only">Phineas</span> <span class="icon-bar">New
 						Cars</span> <span class="icon-bar">Used Cars</span>
 				</button>
 				<a class="navbar-brand topnav" href="home.jsp">Shopping Cart</a> <a
-					class="navbar-brand topnav navbar-center" href="New.jsp">New
-					Cars</a> <a class="navbar-brand topnav navbar-center" href="Used.jsp">Used
-					Cars</a>
+					class="navbar-brand topnav navbar-center" href="New">New Cars</a> <a
+					class="navbar-brand topnav navbar-center" href="Used">Used Cars</a>
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>
@@ -76,11 +75,11 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<ul class="list-inline">
-						<li><a href="home.jsp">Home</a></li>
+						<li><a href="home">Home</a></li>
 						<li class="footer-menu-divider"></li>
-						<li><a href="about.jsp">About</a></li>
+						<li><a href="about">About</a></li>
 						<li class="footer-menu-divider"></li>
-						<li><a href="ContactUs.jsp">Contact</a></li>
+						<li><a href="ContactUs">Contact</a></li>
 					</ul>
 					<p class="copyright text-muted small">Copyright &copy; Phineas
 						2016 - Aravind Marshall</p>

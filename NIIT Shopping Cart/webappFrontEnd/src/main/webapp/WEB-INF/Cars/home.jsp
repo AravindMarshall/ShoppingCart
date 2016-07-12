@@ -56,7 +56,7 @@
 					<span class="sr-only">Phineas</span> <span class="icon-bar"></span>
 					<span class="icon-bar"> </span> <span class="icon-bar"> </span>
 				</button>
-				<a class="navbar-brand topnav" href="home.jsp">Phineas</a>
+				<a class="navbar-brand topnav" href="home1">Phineas</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
@@ -65,12 +65,12 @@
 					<li>Welcome ${ param.userId }</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="Cars/home.jsp">Home</a></li>
-					<li><a href="Cars\New or Old.jsp">Buyer</a></li>
-					<li><a href="\New or Old.jsp">Seller</a></li>
-					<li><a href="ContactUs.jsp">Contact us</a></li>
-					<li><a href="Cars/Login.jsp">Sign In</a></li>
-					<li><a href="Cars\AdminHome.jsp">Admin</a></li>
+					<li class="active"><a href="home1">Home</a></li>
+					<li><a href="NewOrOld">Buyer</a></li>
+					<li><a href="NewOrOld">Seller</a></li>
+					<li><a href="ContactUs">Contact us</a></li>
+					<li><a href="login">Sign In</a></li>
+					<li><a href="Admin">Admin</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -88,9 +88,46 @@
 							Car Models <span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu">
-							<li><a href="#">Ferrai</a></li>
-							<li><a href="#">Maruti</a></li>
-							<li><a href="#">Benz</a></li>
+							<li><a href="#">Maruti Suzuki</a></li>
+							<li><a href="#">Hyundai</a></li>
+							<li><a href="#">Volkswagen</a></li>
+							<li><a href="#">Tata</a></li>
+							<li><a href="#">Toyota</a></li>
+							<li><a href="#">Honda</a></li>
+							<li><a href="#">Ford</a></li>
+							<li><a href="#">Nissan</a></li>
+							<li><a href="#">Mahindra</a></li>
+							<li><a href="#">Toyota</a></li>
+							<li><a href="#">Renault</a></li>
+							<li><a href="#">Audi</a></li>
+							<li><a href="#">BMW</a></li>
+							<li><a href="#">Mercedes Benz</a></li>
+							<li><a href="#">Skoda</a></li>
+							<li><a href="#">Chevrolet</a></li>
+							<li><a href="#">Aston Martin</a></li>
+							<li><a href="#">Bentley</a></li>
+							<li><a href="#">Bugatti</a></li>
+							<li><a href="#">Datsun</a></li>
+							<li><a href="#">Ferrari</a></li>
+							<li><a href="#">Fiat</a></li>
+							<li><a href="#">Force Motors</a></li>
+							<li><a href="#">DC</a></li>
+							<li><a href="#">Isuzu</a></li>
+							<li><a href="#">Jaguar</a></li>
+							<li><a href="#">Lamborghini</a></li>
+							<li><a href="#">Land Rover</a></li>
+							<li><a href="#">Maserati</a></li>
+							<li><a href="#">Mini</a></li>
+							<li><a href="#">Mitsubishi</a></li>
+							<li><a href="#">Porsche</a></li>
+							<li><a href="#">Premier</a></li>
+							<li><a href="#">Rolls Royce</a></li>
+							<li><a href="#">Ssangyong</a></li>
+							<li><a href="#">Volvo</a></li>
+							<li><a href="#">Datsun</a></li>
+							<li><a href="#">Ford</a></li>
+							<li><a href="#">Eicher Polaris</a></li>
+
 						</ul>
 					</div>
 				</div>
@@ -184,6 +221,34 @@
 			</div>
 		</div>
 
+
+		<!-- div class="Container">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-xs-6 thumb">Maruti Suzuki</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-xs-6 thumb">Hyundai</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-xs-6 thumb">Volkswagen</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-xs-6 thumb">Tata</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-xs-6 thumb">Toyota</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-xs-6 thumb">Honda</div>
+				</div>
+				Ford Nissan Mahindra Renault Audi BMW Mercedes Benz Skoda Chevrolet
+				Aston Martin Bentley Bugatti Datsun Ferrari Fiat Force Motors DC
+				Isuzu Jaguar Lamborghini Land Rover Maserati Mini Mitsubishi Porsche
+				Premier Rolls Royce Ssangyong Volvo Datsun Ford Eicher Polaris
+			</div>
+		</div -->
+
 		<div class="Container">
 			<div class="jumbotron">
 
@@ -268,11 +333,11 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<ul class="list-inline">
-								<li><a href="home.jsp">Home</a></li>
+								<li><a href="home">Home</a></li>
 								<li class="footer-menu-divider"></li>
-								<li><a href="about.jsp">About</a></li>
+								<li><a href="about">About</a></li>
 								<li class="footer-menu-divider"></li>
-								<li><a href="ContactUs.jsp">Contact</a></li>
+								<li><a href="ContactUs">Contact</a></li>
 							</ul>
 							<p class="copyright text-muted small">Copyright &copy;
 								Phineas 2016 - Aravind Marshall</p>

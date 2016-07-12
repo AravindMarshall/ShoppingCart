@@ -23,26 +23,26 @@ table, th, td {
 </head>
 <body>
 
-<h4>List of available Product</h4>
+	<h4>List of available Product</h4>
 
-<table width="50%">
-	<tr>
-	    <th align="left">S.No</th>
-		<th align="left">Id</th>
-		<th align="left">Name</th>
-		<th align="left">Description</th>
-		
-	</tr>
-	<c:forEach items="${productList}" var="product" varStatus="status">
+	<table width="50%">
 		<tr>
-			<td>${status.count}</td>
-			<td>${product.id}</td>
-			<td>${product.name}</td>
-			<td>${product.address}</td>
-			
+			<th align="left">S.No</th>
+			<th align="left">Id</th>
+			<th align="left">Name</th>
+			<th align="left">Description</th>
+
 		</tr>
-	</c:forEach>
-</table>
+		<c:forEach items="${productList}" var="product" varStatus="status">
+			<tr>
+				<td>${status.count}</td>
+				<td>${product.id}</td>
+				<td>${product.name}</td>
+				<td>${product.address}</td>
+
+			</tr>
+		</c:forEach>
+	</table>
 
 
 </body>

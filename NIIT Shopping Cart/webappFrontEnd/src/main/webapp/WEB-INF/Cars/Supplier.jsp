@@ -111,8 +111,10 @@
 			</c:forEach>
 		</table>
 	</c:if>
-	
-<br><br><a href="admin"><button type="button" class="btn btn-primary">Back</button></a>
+
+	<br>
+	<br>
+	<a href="Admin"><button type="button" class="btn btn-primary">Back</button></a>
 
 </body>
 </html>

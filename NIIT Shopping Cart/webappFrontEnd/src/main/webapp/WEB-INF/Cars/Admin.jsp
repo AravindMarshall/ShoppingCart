@@ -56,7 +56,7 @@
 					<span class="sr-only">Phineas</span> <span class="icon-bar"></span>
 					<span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand topnav" href="home.jsp">Phineas</a>
+				<a class="navbar-brand topnav" href="home1">Phineas</a>
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>
@@ -69,15 +69,18 @@
 	<br>
 	<br>
 	<div class="container" align ="center">
-		Supplier : <a href="getAllSuppliers">Show </a> | <a href="suppliers">
-			Modify </a> <br> <br> Products : <a href="getAllProducts">
-			Show </a> | <a href="products"> Modify </a> <br> <br>
-		Categories: <a href="getAllCategories"> Show </a> | <a
-			href="categories"> Modify</a> <br> <br> Users : <a
-			href="getAllUsers"> Show </a> | <a href="users"> Modify</a> <br>
-		<br> Transaction: <a href="getAllTransaction"> Show </a> | <a
-			href="Transaction"> Modify</a> <br> <br> Delivery: <a
-			href="getAllDelivery"> Show </a> | <a href="Delivery"> Modify</a>
+		Supplier : <a href="getAllSuppliers"><button type="button" class="btn btn-info">Show</button></a> | <a href="suppliers"><button type="button" class="btn btn-success">
+			Modify </button></a> <br> <br> 
+			Products : <a href="getAllProducts"><button type="button" class="btn btn-info">
+			Show</button> </a> | <a href="products"><button type="button" class="btn btn-success"> Modify </button></a> <br> <br>
+		Categories: <a href="getAllCategories"><button type="button" class="btn btn-info"> Show </button></a> | <a
+			href="categories"><button type="button" class="btn btn-success"> Modify</button></a> <br> <br> 
+			Users : <a
+			href="getAllUsers"><button type="button" class="btn btn-info"> Show</button></a> | <a href="users"><button type="button" class="btn btn-success"> Modify</button></a> <br>
+		<br> Transaction: <a href="getAllTransaction"><button type="button" class="btn btn-info"> Show </button></a> | <a
+			href="Transaction"><button type="button" class="btn btn-success"> Modify</button></a> <br> <br> 
+			Delivery: <a
+			href="getAllDelivery"> <button type="button" class="btn btn-info">Show </button></a> | <a href="Delivery"><button type="button" class="btn btn-success"> Modify </button></a>
 	</div>
 	<br>
 	<br>
@@ -88,11 +91,11 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<ul class="list-inline">
-						<li><a href="home.jsp">Home</a></li>
+						<li><a href="home1">Home</a></li>
 						<li class="footer-menu-divider"></li>
-						<li><a href="about.jsp">About</a></li>
+						<li><a href="about">About</a></li>
 						<li class="footer-menu-divider"></li>
-						<li><a href="ContactUs.jsp">Contact</a></li>
+						<li><a href="ContactUs">Contact</a></li>
 					</ul>
 					<p class="copyright text-muted small">Copyright &copy; Phineas
 						2016 - Aravind Marshall</p>

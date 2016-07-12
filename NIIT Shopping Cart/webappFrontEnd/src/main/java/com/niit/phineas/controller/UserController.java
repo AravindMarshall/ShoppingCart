@@ -25,7 +25,7 @@ public class UserController {
 	
 	@RequestMapping("/")
 	public String gotohome() {
-		return "Login";
+		return "home";
 	}
 
 
@@ -81,9 +81,47 @@ public class UserController {
 		  return new ModelAndView("/register");
 	}
 	
-	@RequestMapping("/admin")
-	public String gotoadmin() {
+	@RequestMapping("/home1")
+	public String gotohome1() {
+		return "home";
+	}
+	
+	@RequestMapping("/ContactUs")
+	public String gotoContactUs() {
+		return "ContactUs";
+	}
+	
+	@RequestMapping("/about")
+	public String gotoAbout() {
+		return "about";
+	}
+	
+	@RequestMapping("/Admin")
+	public String gotoAdmin() {
 		return "Admin";
 	}
+	
+	
+	@RequestMapping("/NewOrOld")
+	public String gotoNewOrOld() {
+		return "New or Old";
+	}
+	
+
+	@RequestMapping("/login")
+	public String gotoLogin() {
+		return "Login";
+	}
+	
+	@RequestMapping("/Used")
+	public String gotoUsed() {
+		return "Used";
+	}
+
+	@RequestMapping("/New")
+	public String gotoNew() {
+		return "New";
+	}
+
 }
 

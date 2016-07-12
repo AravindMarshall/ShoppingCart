@@ -47,17 +47,19 @@
 					<span class="sr-only">Phineas</span> <span class="icon-bar"></span>
 					<span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand topnav" href="home.jsp">Phineas</a>
+				<a class="navbar-brand topnav" href="home1">Phineas</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
+
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="home.jsp">Home</a></li>
-					<li><a href="New or Old.jsp">Buyer</a></li>
-					<li><a href="New or Old.jsp">Seller</a></li>
-					<li><a href="ContactUs.jsp">Contact us</a></li>
-					<li><a href="Login.jsp">Sign In</a></li>
+					<li class="active"><a href="home1">Home</a></li>
+					<li><a href="NewOrOld">Buyer</a></li>
+					<li><a href="NewOrOld">Seller</a></li>
+					<li><a href="ContactUs">Contact us</a></li>
+					<li><a href="login">Sign In</a></li>
+					<li><a href="Admin">Admin</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -120,11 +122,11 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<ul class="list-inline">
-						<li><a href="home.jsp">Home</a></li>
+						<li><a href="home1">Home</a></li>
 						<li class="footer-menu-divider"></li>
-						<li><a href="about.jsp">About</a></li>
+						<li><a href="about">About</a></li>
 						<li class="footer-menu-divider"></li>
-						<li><a href="ContactUs.jsp">Contact Us</a></li>
+						<li><a href="ContactUs">Contact Us</a></li>
 					</ul>
 					<p class="copyright text-muted small">Copyright &copy; Phineas
 						2016 - Aravind Marshall</p>

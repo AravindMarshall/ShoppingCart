@@ -62,11 +62,12 @@
 					</c:when>
 
 					<c:otherwise>
-						<td><form:input path="id" patttern =".{6,7}" required="true" title="id should contains 6 to 7 characters" /></td>
+						<td><form:input path="id" patttern=".{6,7}" required="true"
+								title="id should contains 6 to 7 characters" /></td>
 					</c:otherwise>
 				</c:choose>
 			<tr>
-			<form:input path="id" hidden="true"  />
+				<form:input path="id" hidden="true" />
 				<td><form:label path="name">
 						<spring:message text="Name" />
 					</form:label></td>
@@ -110,5 +111,8 @@
 			</c:forEach>
 		</table>
 	</c:if>
+	
+<br><br><a href="admin"><button type="button" class="btn btn-primary">Back</button></a>
+
 </body>
 </html>

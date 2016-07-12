@@ -67,12 +67,16 @@
 
 
 	<div class="container" align="center">
-		<h3>Add Category</h3>
 
 		<c:url var="addAction" value="/category/add"></c:url>
 
 		<form:form action="${addAction}" commandName="category">
 			<table>
+									<td colspan="2"><c:if test="${!empty category.name}">
+				<h1>Edit Category</h1>
+						</c:if> <c:if test="${empty category.name}">
+							<h1>Add Category</h1>
+						</c:if></td>
 				<tr>
 					<td><form:label path="id">
 							<spring:message text="ID" />
@@ -136,7 +140,7 @@
 				</c:forEach>
 			</table>
 		</c:if>
-		<br><br><a href="admin"><button type="button" class="btn btn-primary">Back</button></a>
+		<br><br><a href="Admin"><button type="button" class="btn btn-primary">Back</button></a>
 	</div>
 	<br>
 
