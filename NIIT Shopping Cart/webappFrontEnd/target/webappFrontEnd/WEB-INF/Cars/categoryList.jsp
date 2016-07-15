@@ -89,7 +89,7 @@ style>.jumbotron {background color = #2E2D88;
 					<span class="sr-only">Phineas</span> <span class="icon-bar"></span>
 					<span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand topnav" href="home.jsp">Phineas</a>
+				<a class="navbar-brand topnav" href="home1.jsp">Phineas</a>
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>
@@ -122,7 +122,7 @@ style>.jumbotron {background color = #2E2D88;
 					</c:forEach>
 				</table>
 			</c:if>
-			<br><br><a href="admin"><button type="button" class="btn btn-primary">Back</button></a>
+			<br><br><a href="Admin"><button type="button" class="btn btn-primary">Back</button></a>
 		</div>
 		
 	</div>

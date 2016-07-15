@@ -35,7 +35,7 @@
 							<div class="col-xg-4 col-sm-4">
 								<label for="name">User Name </label> <input type="text"
 									class="form-control" name="name" required="" 
-									placeholder=" User name ">
+									placeholder=" User name " >
 							</div>
 
 							<!-- div class="form-group"-->

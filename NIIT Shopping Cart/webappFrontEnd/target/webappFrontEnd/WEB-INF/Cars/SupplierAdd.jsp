@@ -47,12 +47,17 @@
 <body>
 
 	<div class="container" align="center">
-		<h1>Add Supplier</h1>
-
+		
 		<c:url var="addAction" value="/supplier/add"></c:url>
 
 		<form:form action="${addAction}" commandName="supplier">
 			<table>
+				<td colspan="2"><c:if test="${!empty supplier.name}">
+						<h1>Edit Supplier</h1>
+					</c:if> <c:if test="${empty supplier.name}">
+						<h1>Add Supplier</h1>
+					</c:if></td>
+
 				<tr>
 					<td><form:label path="id">
 							<spring:message text="ID" />
@@ -116,7 +121,8 @@
 				</c:forEach>
 			</table>
 		</c:if>
-		<br><br><a href="admin"><button type="button" class="btn btn-primary">Back</button></a>
+		<br> <br> <a href="Admin"><button type="button"
+				class="btn btn-primary">Back</button></a>
 	</div>
 
 </body>

@@ -14,7 +14,6 @@ import com.niit.phineas.dao.Userdao;
 import com.niit.phineas.model.Supplier;
 import com.niit.phineas.model.User;
 import com.niit.phineas.model.UserDetails;
-/* import com.niit.phineas.model.UserDetails;*/
 
 
 @Controller
@@ -25,7 +24,7 @@ public class UserController {
 	
 	@RequestMapping("/")
 	public String gotohome() {
-		return "home";
+		return "TestAdmin";
 	}
 
 
@@ -123,5 +122,6 @@ public class UserController {
 		return "New";
 	}
 
+	
 }
 

@@ -96,4 +96,10 @@ public class UserdaoImpl implements Userdao {
 		return false;
 	}
 
+//I have to write a code to generate Id
+@Transactional
+public void genId ()
+{
 }
+}
+

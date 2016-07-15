@@ -45,64 +45,37 @@
 
 <body>
 
-	<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top topnav"
-		role="navigation">
-		<div class="container topnav">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Phineas</span> <span class="icon-bar"></span>
-					<span class="icon-bar"></span> <span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand topnav" href="home1">Phineas</a>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container -->
-	</nav>
-
+	<%@ include file="Header.jsp"%>
 
 	<br>
 	<br>
 	<br>
 	<br>
-	<div class="container" align ="center">
-		Supplier : <a href="getAllSuppliers"><button type="button" class="btn btn-info">Show</button></a> | <a href="suppliers"><button type="button" class="btn btn-success">
-			Modify </button></a> <br> <br> 
-			Products : <a href="getAllProducts"><button type="button" class="btn btn-info">
-			Show</button> </a> | <a href="products"><button type="button" class="btn btn-success"> Modify </button></a> <br> <br>
-		Categories: <a href="getAllCategories"><button type="button" class="btn btn-info"> Show </button></a> | <a
-			href="categories"><button type="button" class="btn btn-success"> Modify</button></a> <br> <br> 
-			Users : <a
-			href="getAllUsers"><button type="button" class="btn btn-info"> Show</button></a> | <a href="users"><button type="button" class="btn btn-success"> Modify</button></a> <br>
-		<br> Transaction: <a href="getAllTransaction"><button type="button" class="btn btn-info"> Show </button></a> | <a
-			href="Transaction"><button type="button" class="btn btn-success"> Modify</button></a> <br> <br> 
-			Delivery: <a
-			href="getAllDelivery"> <button type="button" class="btn btn-info">Show </button></a> | <a href="Delivery"><button type="button" class="btn btn-success"> Modify </button></a>
+	<div class="container" align="center">
+		Supplier : <a href="getAllSuppliers"><button type="button"
+				class="btn btn-info">Show</button></a> | <a href="suppliers"><button
+				type="button" class="btn btn-success">Modify</button></a> <br> <br>
+		Products : <a href="getAllProducts"><button type="button"
+				class="btn btn-info">Show</button> </a> | <a href="products"><button
+				type="button" class="btn btn-success">Modify</button></a> <br> <br>
+		Categories: <a href="getAllCategories"><button type="button"
+				class="btn btn-info">Show</button></a> | <a href="categories"><button
+				type="button" class="btn btn-success">Modify</button></a> <br> <br>
+		Users : <a href="getAllUsers"><button type="button"
+				class="btn btn-info">Show</button></a> | <a href="users"><button
+				type="button" class="btn btn-success">Modify</button></a> <br> <br>
+		Transaction: <a href="getAllTransaction"><button type="button"
+				class="btn btn-info">Show</button></a> | <a href="Transaction"><button
+				type="button" class="btn btn-success">Modify</button></a> <br> <br>
+		Delivery: <a href="getAllDelivery">
+			<button type="button" class="btn btn-info">Show</button>
+		</a> | <a href="Delivery"><button type="button"
+				class="btn btn-success">Modify</button></a>
 	</div>
 	<br>
 	<br>
 
-	<!-- My website Footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<ul class="list-inline">
-						<li><a href="home1">Home</a></li>
-						<li class="footer-menu-divider"></li>
-						<li><a href="about">About</a></li>
-						<li class="footer-menu-divider"></li>
-						<li><a href="ContactUs">Contact</a></li>
-					</ul>
-					<p class="copyright text-muted small">Copyright &copy; Phineas
-						2016 - Aravind Marshall</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<%@ include file="Footer.jsp"%>
 
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>

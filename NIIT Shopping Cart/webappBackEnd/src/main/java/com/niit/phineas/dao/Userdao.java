@@ -25,4 +25,6 @@ public interface Userdao {
 	 */
 	public boolean isValidUser(String name, String password, boolean isAdmin);
 	
+	public void genId();//My code
+	
 }
